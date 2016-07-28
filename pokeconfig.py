@@ -20,7 +20,7 @@ class Pokeconfig:
     slack_webhook_url = None
     num_steps = DEFAULT_NUM_STEPS
     distance_unit = DEFAULT_DISTANCE_UNIT
-    slack_name = Soaring
+    slack_name = "Soaring"
     position = ()
 
     def load_config(self, config_path):

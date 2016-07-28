@@ -20,6 +20,7 @@ class Pokeconfig:
     slack_webhook_url = None
     num_steps = DEFAULT_NUM_STEPS
     distance_unit = DEFAULT_DISTANCE_UNIT
+	slack_name = None
     position = ()
 
     def load_config(self, config_path):
@@ -51,6 +52,7 @@ class Pokeconfig:
             self.location_name = str(env['LOCATION_NAME'])
             self.rarity_limit = int(env['RARITY_LIMIT'])
             self.slack_webhook_url = str(env['SLACK_WEBHOOK_URL'])
+			self.slack_name = str(env['SLACK_NAME'])
             if 'NUM_STEPS' in env:
                 self.num_steps = int(env['NUM_STEPS'])
             else:

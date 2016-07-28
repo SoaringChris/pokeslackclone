@@ -31,5 +31,8 @@
 			"description": "Unit of measurement to use (meters or miles)",
 			"value": "miles"
 		}
+		"SLACK_NAME": {
+			"description": "Person to @ metnion on Slack",
+		}
 	}
 }

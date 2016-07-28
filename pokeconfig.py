@@ -20,7 +20,7 @@ class Pokeconfig:
     slack_webhook_url = None
     num_steps = DEFAULT_NUM_STEPS
     distance_unit = DEFAULT_DISTANCE_UNIT
-    slack_name = "soaringchris137"
+    slack_name = str(os.environ['SLACK_NAME'])
     position = ()
 
     def load_config(self, config_path):

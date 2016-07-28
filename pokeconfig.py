@@ -59,7 +59,7 @@ class Pokeconfig:
                 logging.warn('NUM_STEPS not defined defaulting to: %s', self.num_steps)
 				
             if 'SLACK_NAME' in env:
-                self.slack_name = int(env['SLACK_NAME'])
+                self.slack_name = str(env['SLACK_NAME'])
             else:
                 logging.warn('SLACK_NAME not defined defaulting to: %s', self.SLACK_NAME)
             if 'DISTANCE_UNIT' in env:

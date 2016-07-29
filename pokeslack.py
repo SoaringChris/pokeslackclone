@@ -58,7 +58,7 @@ class Pokeslack:
     def _send(self, message):
         payload = {
             'username': 'Poké Alert!',
-            'channel': "@SoaringChris137",
+            'channel': "@" + Pokeconfig.slack_name,
             'text': message,
             'icon_emoji': ':ghost:'
         }

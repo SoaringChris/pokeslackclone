@@ -61,7 +61,6 @@ class Pokeslack:
             'username': 'Poké Alert!',
             'channel': "@" + Pokeconfig.slack_name,
             'text': message,
-            'icon_emoji': ':ghost:'
         }
         s = json.dumps(payload)
         r = requests.post(self.slack_webhook_url, data=s)

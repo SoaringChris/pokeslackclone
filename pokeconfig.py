@@ -21,7 +21,7 @@ class Pokeconfig:
     num_steps = DEFAULT_NUM_STEPS
     distance_unit = DEFAULT_DISTANCE_UNIT
     slack_name = str(os.environ['SLACK_NAME'])
-    falloff = True;
+    falloff = bol(os.environ['FALLOFF'])
     position = ()
 
     def load_config(self, config_path):

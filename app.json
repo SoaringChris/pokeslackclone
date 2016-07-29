@@ -34,5 +34,8 @@
 		"SLACK_NAME": {
 			"description": "Person to @ metnion on Slack",
 		}
+		"FALLOFF": {
+			"description": "Only show within walking distance?",
+		}
 	}
 }
